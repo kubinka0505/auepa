@@ -1,10 +1,15 @@
 import setuptools
 
+with open('ReadMe.md') as readme_file:
+	README = readme_file.read()
+
 setuptools.setup(
 	name = "auepa",
 	version = "0.1",
 	author = "kubinka0505",
 	description = """Another Unofficial EmojiPedia API.""",
+	long_description_content_type = "text/markdown",
+	long_description = README,
 	license = "GPL V3",
 	keywords = "auepa image emojipedia api api-wrapper",
 	url = "https://github.com/kubinka0505/auepa",
